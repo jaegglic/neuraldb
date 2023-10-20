@@ -1,0 +1,9 @@
+thirdai[neural_db]
+tika
+openai
+requests
+nltk
+pandas
+numpy
+python-dotenv
+streamlit

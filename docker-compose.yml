@@ -1,0 +1,7 @@
+version: '3.7'
+services:
+  tika:
+    image: apache/tika:latest
+    restart: always
+    ports:
+      - "9998:9998"
