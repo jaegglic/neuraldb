@@ -9,7 +9,7 @@ st.set_page_config(page_title='ThirdAI',
 
 filenames = [
     'data/raw/2020-Scrum-Guide-US.pdf',
-    # 'data/raw/Swissmedic_GB_2021_Layout_Englisch_ES_web.pdf',
+    'data/raw/Swissmedic_GB_2021_Layout_Englisch_ES_web.pdf',
 ]
 
 if 'thirdai' not in st.session_state:
