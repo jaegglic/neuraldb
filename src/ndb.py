@@ -1,17 +1,13 @@
-import os
 from typing import List
 
-from dotenv import load_dotenv
 import thirdai
 from thirdai import neural_db as ndb
-
-load_dotenv()
-thirdai.licensing.activate(os.getenv('THIRDAI_KEY'))
 
 
 class ThirdAI:
 
-    def __init__(self):
+    def __init__(self, api_key: str):
+        thirdai.licensing.activate(api_key=api_key)
         self._db = ndb.NeuralDB()
 
     def insert(self, filenames: List[str]):
